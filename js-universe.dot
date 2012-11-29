@@ -193,6 +193,8 @@ digraph js_universe
     baker -> Google;
     jgwebber -> GWT;
     jgwebber -> Google;
+    kellegous -> GWT;
+    kellegous -> Google;
 
     // project and company relationships
     INFA -> NW;
@@ -319,6 +321,7 @@ digraph js_universe
     julie     [ label="Julie Parent"];
     ojan      [ label="Ojan Vafai"];
     baker     [ label="Greg Baker"];
+    kellegous [ label="Kelly Norton"];
 
     // companies
     DotNetSol   [ label="Dot Net\nSolutions",shape=box ];
