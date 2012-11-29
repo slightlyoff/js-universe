@@ -41,6 +41,8 @@ digraph js_universe
     danp -> DotNetSol;
     danp -> _13p;
     danp -> Google;
+    danp -> Gmail;
+    danp -> Closure;
     psowden -> Dojo;
     psowden -> Jot;
     dylan -> INFA;
@@ -59,11 +61,15 @@ digraph js_universe
     erik -> Bindows;
     erik -> WebOS;
     erik -> Google;
-    erik -> ExCanvas
+    erik -> ExCanvas;
+    erik -> Closure;
+    erik -> Gmail;
     emil -> WebFX;
     emil -> WebOS;
     emil -> Google;
     emil -> ExCanvas;
+    emil -> Closure;
+    emil -> Gmail;
     mhall -> BrainJar;
     dsteinman -> DynAPI;
     dsteinman -> WebOS; // thanks, Erik!
@@ -98,6 +104,9 @@ digraph js_universe
     djoham -> XMLJS;
     mhoughton -> XMLJS;
     ssevertson -> XMLJS;
+    julie -> Closure;
+    julie -> ClosureEdit;
+    julie -> Google;
     jvnoort -> XMLJS;
     inforat -> Tibet;
     idearat -> Tibet;
@@ -141,6 +150,8 @@ digraph js_universe
     dcrockford -> JSLint;
     dcrockford -> Yahoo;
     smorais -> HotWired;
+    ojan -> ClosureEdit;
+    ojan -> Google;
     pcorcoran -> HotWired;
     pcorcoran -> ActiveSpace;
     pcorcoran -> Microsoft;
@@ -175,7 +186,9 @@ digraph js_universe
     jaffathecake -> Google;
     phae -> Glow;
     phae -> BBC;
-    jgwebber -> GWT;
+    baker -> Closure;
+    baker -> Gmail;
+    baker -> Google;
 
     // project and company relationships
     INFA -> NW;
@@ -196,7 +209,7 @@ digraph js_universe
     Oddpost -> Yahoo [ label="Y! bought Oddpost" ];
     Google -> Gmail;
     Google -> Gmaps;
-    Google -> GWT [ label="GOOG buys Red Pill which becomes GWT" ];
+    Google -> Closure;
     Yahoo -> Flickr [ label="Y! bought Flickr" ];
     ModPubSub -> RePubSub;
     GenInt -> TIBCO [ label="bought" ];
@@ -216,6 +229,7 @@ digraph js_universe
     Microsoft -> Atlas;
     Yahoo -> Yui;
     IBM -> Dojo;
+    ClosureEdit -> Closure;
 
     // developers
     psowden   [ label="Paul Sowden" ];
@@ -295,7 +309,10 @@ digraph js_universe
     nroberts  [ label="Neil Roberts" ];
     micmath   [ label="Michael Mathews"];
     jaffathecake [ label="Jake Archibald"];
-    phae [label="Frances Berriman"]
+    phae      [ label="Frances Berriman"];
+    julie     [ label="Julie Parent"];
+    ojan      [ label="Ojan Vafai"];
+    baker     [ label="Greg Baker"];
 
     // companies
     DotNetSol   [ label="Dot Net\nSolutions",shape=box ];
@@ -321,6 +338,7 @@ digraph js_universe
     BBC       [ shape=box ];
     Sitepen   [ shape=box];
     Twitter   [ shape=box];
+
     // projects and products
     Storage   [ label="AMASS",shape=diamond ];
     jsxml   [ shape=diamond ];
@@ -376,7 +394,8 @@ digraph js_universe
     Glow    [ label="BBC Glow",shape=diamond];
     JSDocToolkit [label="JSDocToolkit",shape=diamond];
     ExCanvas [label="ExplorerCanvas",shape=diamond];
-    GWT [ label="GWT",shape=diamond ];
+    Closure  [shape=diamond];
+    ClosureEdit [label="Closure Editor",shape=diamond];
   }
 
 // vim:ts=2:et:ai
