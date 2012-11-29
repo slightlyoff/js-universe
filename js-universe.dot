@@ -37,12 +37,14 @@ digraph js_universe
     mda -> Burst;
     boogs -> Dojo;
     boogs -> Google;
-    danp -> Dojo;
-    danp -> DotNetSol;
-    danp -> _13p;
-    danp -> Google;
-    danp -> Gmail;
-    danp -> Closure;
+    dpup -> Dojo;
+    dpup -> DotNetSol;
+    dpup -> _13p;
+    dpup -> Google;
+    dpup -> Gmail;
+    dpup -> GPlus;
+    dpup -> Closure;
+    dpup -> Obvious;
     psowden -> Dojo;
     psowden -> Jot;
     dylan -> INFA;
@@ -209,6 +211,7 @@ digraph js_universe
     Oddpost -> Yahoo [ label="Y! bought Oddpost" ];
     Google -> Gmail;
     Google -> Gmaps;
+    Google -> GPlus;
     Google -> Closure;
     Yahoo -> Flickr [ label="Y! bought Flickr" ];
     ModPubSub -> RePubSub;
@@ -246,7 +249,7 @@ digraph js_universe
     boogs     [ label="Aaron Boodman" ];
     alexr     [ label="Alex Russell" ];
     dylan     [ label="Dylan Schiemann" ];
-    danp    [ label="Dan Pupius" ];
+    dpup      [ label="Dan Pupius" ];
     tscarfe   [ label="Tim Scarfe" ];
     dsteinman   [ label="Dan Steinman" ];
     mhall     [ label="Mike Hall" ];
@@ -358,7 +361,8 @@ digraph js_universe
     ModPubSub   [ label="mod_pubsub",shape=diamond ];
     RePubSub  [ label="re_pubsub",shape=diamond ];
     Gmail     [ label="GMail",shape=diamond ];
-    Gmaps   [ label="Google Maps ",shape=diamond ];
+    Gmaps     [ label="Google Maps ",shape=diamond ];
+    GPlus     [ label="Google+",shape=diamond ];
     BrainJar  [ label="Brain Jar",shape=diamond ];
     FM      [ label="f(m)",shape=diamond ];
     WebFX     [ label="WebFX.eae.net",shape=diamond ];
@@ -373,6 +377,7 @@ digraph js_universe
     KevLinDev     [ label="kevlindev.com",shape=diamond ];
     ActiveWidgets [ label="ActiveWidgets",shape=diamond ];
     SWAT    [ shape=diamond ];
+    Obvious [ shape=box ];
     Prototype [ shape=diamond ];
     RoR     [ label="Ruby On Rails",shape=diamond ];
     Script_aculo_us [ label="Script.aculo.us",shape=diamond ];
