@@ -175,6 +175,7 @@ digraph js_universe
     jaffathecake -> Google;
     phae -> Glow;
     phae -> BBC;
+    jgwebber -> GWT;
 
     // project and company relationships
     INFA -> NW;
@@ -195,6 +196,7 @@ digraph js_universe
     Oddpost -> Yahoo [ label="Y! bought Oddpost" ];
     Google -> Gmail;
     Google -> Gmaps;
+    Google -> GWT [ label="GOOG buys Red Pill which becomes GWT" ];
     Yahoo -> Flickr [ label="Y! bought Flickr" ];
     ModPubSub -> RePubSub;
     GenInt -> TIBCO [ label="bought" ];
@@ -374,6 +376,7 @@ digraph js_universe
     Glow    [ label="BBC Glow",shape=diamond];
     JSDocToolkit [label="JSDocToolkit",shape=diamond];
     ExCanvas [label="ExplorerCanvas",shape=diamond];
+    GWT [ label="GWT",shape=diamond ];
   }
 
 // vim:ts=2:et:ai
