@@ -189,6 +189,8 @@ digraph js_universe
     baker -> Closure;
     baker -> Gmail;
     baker -> Google;
+    jgwebber -> GWT;
+    jgwebber -> Google;
 
     // project and company relationships
     INFA -> NW;
@@ -210,6 +212,7 @@ digraph js_universe
     Google -> Gmail;
     Google -> Gmaps;
     Google -> Closure;
+    Google -> GWT [ label="Google buys Red Pill, becomes GWT" ];
     Yahoo -> Flickr [ label="Y! bought Flickr" ];
     ModPubSub -> RePubSub;
     GenInt -> TIBCO [ label="bought" ];
@@ -396,6 +399,7 @@ digraph js_universe
     ExCanvas [label="ExplorerCanvas",shape=diamond];
     Closure  [shape=diamond];
     ClosureEdit [label="Closure Editor",shape=diamond];
+    GWT [ label="GWT",shape=diamond ];
   }
 
 // vim:ts=2:et:ai
