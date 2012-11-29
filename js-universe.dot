@@ -45,6 +45,9 @@ digraph js_universe
 		dylan -> INFA;
 		dylan -> Dojo;
 		dylan -> Renkoo;
+		dylan -> SitePen;
+		dylan -> dgrid;
+		dylan -> Persevere;
 		ttrenka -> Dojo;
 		ttrenka -> FM;
 		ttrenka -> _13p;
@@ -84,6 +87,7 @@ digraph js_universe
 		scottandrew -> ModPubSub;
 		scottandrew -> DynAPI [ style=dotted,label="?" ]; // RAR: Not sure about this one
 		mbazon -> HTMLArea;
+		mbazon -> Uglify;
 		schontz -> NW;
 		schontz -> INFA;
 		schontz -> Jot;
@@ -196,6 +200,9 @@ digraph js_universe
 		Microsoft -> Atlas;
 		Yahoo -> Yui;
 		IBM -> Dojo;
+		SitePen -> Dojo;
+		SitePen -> dgrid;
+		SitePen -> Persevere;
 
 		// developers
 		psowden		[ label="Paul Sowden" ];
@@ -273,6 +280,7 @@ digraph js_universe
 		bskinner	[ label="Brian Skinner" ];
 		ikantor		[ label="Ilia Kantor" ];
 		nroberts	[ label="Neil Roberts" ];
+		kzyp		[ label="Kris Zyp" ];
 
 		// companies
 		DotNetSol 	[ label="Dot Net\nSolutions",shape=box ];
@@ -294,6 +302,7 @@ digraph js_universe
 		BEA			[ shape=box ];
 		Microsoft	[ shape=box ];
 		Zimbra		[ shape=box ];
+		SitePen		[ labe="SitePen",shape=box ];
 
 		// projects and products
 		Storage		[ label="AMASS",shape=diamond ];
@@ -321,6 +330,8 @@ digraph js_universe
 		jscontrols	[ label="WebFX jscontrols",shape=diamond ];
 		Burst 		[ label="Burstlib",shape=diamond ];
 		Dojo 		[ label="Dojo",shape=diamond ];
+		dgrid 		[ label="dgrid",shape=diamond ];
+		Persevere 		[ label="Persevere",shape=diamond ];
 		NW 			[ label="netWindows",shape=diamond ];
 		ISC 		[ label="Isomorphic Inc.",shape=diamond ];
 		WebOS 		[ label="WebOS.com",shape=diamond ];
