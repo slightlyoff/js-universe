@@ -156,6 +156,7 @@ digraph js_universe
 		speterson -> Yui;
 		tkloots -> Yahoo;
 		tkloots -> Yui;
+		tkloots -> Twitter;
 		bkeese -> Dojo;
 		jandrews -> Dojo;
 		bskinner -> Dojo;
@@ -179,6 +180,7 @@ digraph js_universe
 		TurboAjax -> Dojo [ label="TurboAjax built\non Dojo" ];
 		Dojo -> MochiKit [ style=dotted, label="Mochi is Dojo-compatible" ];
 		Jot -> HTMLArea [ label="Jot sponsored \nHTMLArea" ];
+		BBC -> Glow [label="BBC built and open-sourced"]
 		// Tibet -> ISC [ style=dotted ];
 		// FIXME: need to mine these links for info:
 		//	http://koranteng.blogspot.com/2004/07/on-rich-web-applications-alphablox-and.html
@@ -312,6 +314,7 @@ digraph js_universe
     Lanyrd    [ shape=box];
     BBC       [ shape=box ];
     Sitepen   [ shape=box];
+    Twitter   [ shape=box];
 		// projects and products
 		Storage		[ label="AMASS",shape=diamond ];
 		jsxml		[ shape=diamond ];
