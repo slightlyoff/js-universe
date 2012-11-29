@@ -4,9 +4,8 @@
  * Copyright 2005, The Dojo Foundation
  *
  * This file is ENTIRELY PROVISIONAL AND MUTABLE. If you think there is
- * something wrong, boneheaded, or offensive in any of the relationships mapped
- * out here, please assume that I don't know what I'm talking about and mail me
- * the RIGHT information at <alex@dojotoolkit.org>
+ * something wrong, boneheaded, fork it and submit a pull request
+ *
  */
 
 digraph js_universe
@@ -16,7 +15,7 @@ digraph js_universe
 		// overlap=scale;
 		splines=true;
 		// concentrate=true;
-		label="An incomplete mapping of the --DHTML-- JS Universe\nPlease send new information and corrections to:\nalex@dojotoolkit.org";
+		label="An incomplete mapping of the --DHTML-- JS Universe\nPlease fork and submit pull requests github/slightlyoff/js-universe";
 
 		// "dark matter"
 		dm [ label="\"Dark Matter\"\n\nperhaps 3-4x the size of\nthe visible universe?",shape=doublecircle ];
