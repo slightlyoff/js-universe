@@ -1,5 +1,5 @@
 /*
- * A Map of the DHTML Universe
+ * A Map of the JavaScript Universe
  *
  * Copyright 2005, The Dojo Foundation
  *
@@ -9,14 +9,14 @@
  * the RIGHT information at <alex@dojotoolkit.org>
  */
 
-digraph dhtml_universe
+digraph js_universe
 	{
 		// graph-wide config
 		center=true;
 		// overlap=scale;
 		splines=true;
 		// concentrate=true;
-		label="An incomplete mapping of the DHTML Universe\nPlease send new information and corrections to:\nalex@dojotoolkit.org";
+		label="An incomplete mapping of the --DHTML-- JS Universe\nPlease send new information and corrections to:\nalex@dojotoolkit.org";
 
 		// "dark matter"
 		dm [ label="\"Dark Matter\"\n\nperhaps 3-4x the size of\nthe visible universe?",shape=doublecircle ];
