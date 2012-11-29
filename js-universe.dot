@@ -157,6 +157,10 @@ digraph js_universe
 		bskinner -> Dojo;
 		ikantor -> Dojo;
 		nroberts -> Dojo;
+		micmath -> Glow;
+		micmath -> JSDocToolkit;
+		jaffathecake -> Glow;
+		phae -> Glow;
 
 		// project and company relationships
 		INFA -> NW;
@@ -272,6 +276,9 @@ digraph js_universe
 		bskinner	[ label="Brian Skinner" ];
 		ikantor		[ label="Ilia Kantor" ];
 		nroberts	[ label="Neil Roberts" ];
+		micmath   [ label="Michael Mathews"];
+		jaffathecake [ label="Jake Archibald"];
+		phae [label="Frances Berriman"]
 
 		// companies
 		DotNetSol 	[ label="Dot Net\nSolutions",shape=box ];
@@ -346,6 +353,8 @@ digraph js_universe
 		ZATK		[ label="Zimbra AjaxTK",shape=diamond ];
 		Atlas		[ label="Microsoft Atlas",shape=diamond ];
 		Yui			[ label="Yahoo UI",shape=diamond ];
+		Glow    [ label="BBC Glow",shape=diamond];
+		JSDocToolkit [label="JSDocToolkit",shape=diamond];
 	}
 
 // vim:ts=4:noet:ai
