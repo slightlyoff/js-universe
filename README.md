@@ -12,7 +12,13 @@ You'll need to install GraphViz to re-generate the PDF/PNG files from the dot fi
 $ brew install graphviz
 ```
 
-To regenerate the output, run:
+To regenerate the output either use the Makefile:
+
+```
+$ make
+```
+
+or run dot directly:
 
 ```
 $ dot -Tpng js-universe.dot -o js-universe.png
