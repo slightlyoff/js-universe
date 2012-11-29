@@ -59,8 +59,11 @@ digraph js_universe
 		erik -> Bindows;
 		erik -> WebOS;
 		erik -> Google;
+		erik -> ExCanvas
 		emil -> WebFX;
 		emil -> WebOS;
+		emil -> Google;
+		emil -> ExCanvas;
 		mhall -> BrainJar;
 		dsteinman -> DynAPI;
 		dsteinman -> WebOS; // thanks, Erik!
@@ -116,6 +119,7 @@ digraph js_universe
 		swillison -> Flickr;
 		swillison -> Lanyrd;
 		gmurphy -> Google;
+		gmurphy -> ExCanvas;
 		michaelvo -> Backbase;
 		cal -> Yahoo;
 		cal -> Flickr;
@@ -369,6 +373,7 @@ digraph js_universe
 		Yui			[ label="Yahoo UI",shape=diamond ];
 		Glow    [ label="BBC Glow",shape=diamond];
 		JSDocToolkit [label="JSDocToolkit",shape=diamond];
+		ExCanvas [label="ExplorerCanvas",shape=diamond];
 	}
 
 // vim:ts=4:noet:ai
