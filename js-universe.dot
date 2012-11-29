@@ -111,6 +111,7 @@ digraph js_universe
 		glish -> Flickr;
 		swillison -> Yahoo;
 		swillison -> Flickr;
+		swillison -> Lanyrd;
 		gmurphy -> Google;
 		michaelvo -> Backbase;
 		cal -> Yahoo;
@@ -159,8 +160,12 @@ digraph js_universe
 		nroberts -> Dojo;
 		micmath -> Glow;
 		micmath -> JSDocToolkit;
+		micmath -> BBC;
 		jaffathecake -> Glow;
+		jaffathecake -> BBC;
+		jaffathecake -> Lanyrd;
 		phae -> Glow;
+		phae -> BBC;
 
 		// project and company relationships
 		INFA -> NW;
@@ -300,7 +305,8 @@ digraph js_universe
 		BEA			[ shape=box ];
 		Microsoft	[ shape=box ];
 		Zimbra		[ shape=box ];
-
+    Lanyrd    [ shape=box];
+    BBC       [ shape=box ];
 		// projects and products
 		Storage		[ label="AMASS",shape=diamond ];
 		jsxml		[ shape=diamond ];
