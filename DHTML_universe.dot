@@ -1,0 +1,352 @@
+/*
+ * A Map of the DHTML Universe
+ *
+ * Copyright 2005, The Dojo Foundation
+ *
+ * This file is ENTIRELY PROVISIONAL AND MUTABLE. If you think there is
+ * something wrong, boneheaded, or offensive in any of the relationships mapped
+ * out here, please assume that I don't know what I'm talking about and mail me
+ * the RIGHT information at <alex@dojotoolkit.org>
+ */
+
+digraph dhtml_universe
+	{
+		// graph-wide config
+		center=true;
+		// overlap=scale;
+		splines=true;
+		// concentrate=true;
+		label="An incomplete mapping of the DHTML Universe\nPlease send new information and corrections to:\nalex@dojotoolkit.org";
+
+		// "dark matter"
+		dm [ label="\"Dark Matter\"\n\nperhaps 3-4x the size of\nthe visible universe?",shape=doublecircle ];
+
+		// developer to project/company relationships
+		alexr -> INFA;
+		alexr -> NW;
+		alexr -> Dojo;
+		alexr -> Jot;
+		alexr -> RePubSub;
+		jpark -> ModPubSub;
+		jpark -> RePubSub;
+		jpark -> Dojo;
+		jpark -> Renkoo;
+		mda -> NW;
+		mda -> Dojo;
+		mda -> Burst;
+		boogs -> Dojo;
+		boogs -> Google;
+		danp -> Dojo;
+		danp -> DotNetSol;
+		danp -> _13p;
+		danp -> Google;
+		psowden -> Dojo;
+		psowden -> Jot;
+		dylan -> INFA;
+		dylan -> Dojo;
+		dylan -> Renkoo;
+		ttrenka -> Dojo;
+		ttrenka -> FM;
+		ttrenka -> _13p;
+		bratta -> Scriptomania;
+		bratta -> DHTMLCentral;
+		bratta -> DotNetSol;
+		tscarfe -> DotNetSol;
+		tscarfe -> DHTMLCentral;
+		erik -> WebFX;
+		erik -> Bindows;
+		erik -> WebOS;
+		erik -> Google;
+		emil -> WebFX;
+		emil -> WebOS;
+		mhall -> BrainJar;
+		dsteinman -> DynAPI;
+		dsteinman -> WebOS; // thanks, Erik!
+		rrainwater -> DynAPI;
+		rrainwater -> jsDOM;
+		darink -> DomAPI;
+		sporter -> GameLib;
+		charlesk -> ISC;
+		ashevdoff -> ISC;
+		cw -> Gmail [ style=dotted,label="?" ];
+		cw -> Google;
+		nkand -> Google;
+		ilamb -> HalfBrain;
+		ilamb -> AlphaBlox;
+		ilamb -> Oddpost;
+		ilamb -> Yahoo;
+		ediamond -> HalfBrain;
+		ediamond -> AlphaBlox;
+		ediamond -> Oddpost;
+		ediamond -> Yahoo;
+		aplatti -> Oddpost;
+		aplatti -> Yahoo;
+		scottandrew -> ModPubSub;
+		scottandrew -> DynAPI [ style=dotted,label="?" ]; // RAR: Not sure about this one
+		mbazon -> HTMLArea;
+		schontz -> NW;
+		schontz -> INFA;
+		schontz -> Jot;
+		schontz -> _13p;
+		schontz -> FM;
+		michaelvo -> _13p;
+		djoham -> XMLJS;	
+		mhoughton -> XMLJS;
+		ssevertson -> XMLJS;
+		jvnoort	-> XMLJS;
+		inforat -> Tibet;
+		idearat -> Tibet;
+		kevlin -> KevLinDev
+		gkadndorp -> Backbase;
+		jhewitt -> SWAT;
+		swerner -> qooxdoo;
+		aecker -> qooxdoo;
+		caugusti -> qooxdoo;
+		ptracey -> jsxml;
+		sstephenson -> Prototype;
+		tfuchs -> Script_aculo_us;
+		hfuecks -> JPSpan;
+		syen -> TrimPath;
+		bobi -> MochiKit;
+		glish -> Yahoo;
+		glish -> Flickr;
+		swillison -> Yahoo;
+		swillison -> Flickr;
+		gmurphy -> Google;
+		michaelvo -> Backbase;
+		cal -> Yahoo;
+		cal -> Flickr;
+		cal -> Dojo;
+		bradneuberg -> Dojo;
+		bradneuberg -> Storage;
+		bscott -> RICO;
+		bscott -> Yahoo;
+		bscott -> Yui;
+		djames -> RICO;
+		djames -> Yahoo;
+		sschiller -> Yahoo;
+		svisscher -> Q42;
+		mwubben -> sIFR;
+		mdavidson -> sIFR;
+		sjmiles -> Dojo;
+		sjmiles -> TurboAjax;
+		dcrockford -> JSON;
+		dcrockford -> JSLint;
+		dcrockford -> Yahoo;
+		smorais -> HotWired;
+		pcorcoran -> HotWired;
+		pcorcoran -> ActiveSpace;
+		pcorcoran -> Microsoft;
+		smorais -> ActiveSpace;
+		mwubben -> Q42;
+		rdargahi -> ZATK;
+		rdargahi -> Zimbra;
+		amoore -> Yahoo;
+		amoore -> Yui;
+		msweeney -> Yahoo;
+		msweeney -> Yui;
+		nkoechley -> Yahoo;
+		nkoechley -> Yui;
+		jhan -> Yahoo;
+		jhan -> Yui;
+		speterson -> Yahoo;
+		speterson -> Yui;
+		tkloots -> Yahoo;
+		tkloots -> Yui;
+		bkeese -> Dojo;
+		jandrews -> Dojo;
+		bskinner -> Dojo;
+		ikantor -> Dojo;
+		nroberts -> Dojo;
+
+		// project and company relationships
+		INFA -> NW;
+		INFA -> ISC [ label="Informatica licenses \nIsomorphic" ];
+		Jot -> Dojo [ label="Jot sponsors \nDojo" ];
+		Renkoo -> Dojo [ label="Renkoo\nsponsors\nDojo" ];
+		TurboAjax -> Dojo [ label="TurboAjax built\non Dojo" ];
+		Dojo -> MochiKit [ style=dotted, label="Mochi is Dojo-compatible" ];
+		Jot -> HTMLArea [ label="Jot sponsored \nHTMLArea" ];
+		// Tibet -> ISC [ style=dotted ];
+		// FIXME: need to mine these links for info:
+		//	http://koranteng.blogspot.com/2004/07/on-rich-web-applications-alphablox-and.html
+		//	http://koranteng.blogspot.com/2004/10/on-gmail-and-dhtml-architecture-again.html
+		HalfBrain -> AlphaBlox [ label="AlphaBlox acquires HalfBrain" ];
+		AlphaBlox -> IBM [ label="IBM bought AlphaBlox" ];
+		AlphaBlox -> Oddpost [ style=dotted ];
+		Oddpost -> Yahoo [ label="Y! bought Oddpost" ];
+		Google -> Gmail;
+		Google -> Gmaps;
+		Yahoo -> Flickr [ label="Y! bought Flickr" ];
+		ModPubSub -> RePubSub;
+		GenInt -> TIBCO [ label="bought" ];
+		RoR -> Prototype [ label="uses" ];
+		Prototype -> Script_aculo_us [ label="Script.aculo.us\nrequires Prototype" ];
+		Prototype -> RICO [ label="RICO requires\nPrototype" ];
+		Q42 -> XOpus;
+		TrimPath -> TrimJunction;
+		TrimPath -> TrimSpreadsheet;
+		TrimPath -> TrimQuery;
+		TrimSpreadsheet -> NumSum;
+		ActiveSpace -> Plumtree [ label="Plumtree bought ActiveSpace" ];
+		Plumtree -> BEA [ label="BEA bought Plumtree" ];
+		Zimbra -> ZATK [ label="Zimbra open-sourced ATK ('Kabuki'?)" ];
+		jscontrols -> WebFX;
+		Plumtree -> jscontrols;
+		Microsoft -> Atlas;
+		Yahoo -> Yui;
+		IBM -> Dojo;
+
+		// developers
+		psowden		[ label="Paul Sowden" ];
+		mbazon		[ label="Mihai Bazon" ];
+		ediamond	[ label="Ethan Diamond" ];
+		ilamb		[ label="Iain Lamb" ];
+		aplatti		[ label="Adam Platti" ];
+		emil 		[ label="Emil Eklund" ];
+		darink 		[ label="Darin Kadrioski" ];
+		ttrenka 	[ label="Tom Trenka" ];
+		erik 		[ label="Erik Aarvidson" ];
+		bratta 		[ label="Thomas Brattli" ];
+		mda 		[ label="Mark Anderson" ];
+		boogs 		[ label="Aaron Boodman" ];
+		alexr 		[ label="Alex Russell" ];
+		dylan 		[ label="Dylan Schiemann" ];
+		danp 		[ label="Dan Pupius" ];
+		tscarfe 	[ label="Tim Scarfe" ];
+		dsteinman 	[ label="Dan Steinman" ];
+		mhall 		[ label="Mike Hall" ];
+		schampeon 	[ label="Steve Champeon" ];
+		sporter 	[ label="Scott Porter" ];
+		rrainwater 	[ label="Robert Rainwater" ];
+		charlesk 	[ label="Charles Kendrick" ];
+		scottandrew [ label="Scottandrew LePera" ];
+		cw 			[ label="Chris Wetherell" ];
+		jpark		[ label="Joyce Park" ];
+		schontz		[ label="David Schontzler" ];
+		michaelvo	[ label="Michal van Ouwerkerk" ];
+		djoham		[ label="David Joham" ];
+		mhoughton	[ label="Micheal Houghton" ];
+		ssevertson	[ label="Scott Severtson" ];
+		jvnoort		[ label="Jon van Noort" ];
+		idearat		[ label="Scott Shattuck" ];
+		inforat 	[ label="William J. Edney" ];
+		kevlin		[ label="Kevin Lindsey" ];
+		ashevdoff	[ label="Alex Shvedoff" ];
+		gkadndorp	[ label="Gerbert Kaandorp" ];
+		jhewitt		[ label="Joe Hewitt" ];
+		swerner		[ label="Sebastian Werner" ];
+		aecker		[ label="Andreas Ecker" ];
+		caugusti	[ label="Claus Augusti" ];
+		ptracey		[ label="Peter Tracey" ];
+		sstephenson [ label="Sam Stephenson" ];
+		hfuecks		[ label="Harry Fuecks" ];
+		tfuchs		[ label="Thomas Fuchs" ];
+		syen		[ label="Steve Yen" ];
+		bobi		[ label="Bob Ippolito" ];
+		nkand		[ label="Neil Kandalgaonkar" ];
+		glish		[ label="Eric Costello" ];
+		swillison	[ label="Simon Willison" ];
+		gmurphy		[ label="Glen Murphy" ];
+		cal			[ label="Cal Henderson" ];
+		bradneuberg	[ label="Brad Neuberg" ];
+		bscott		[ label="Bill Scott" ];
+		djames		[ label="Darren James" ];
+		sschiller	[ label="Scott Schiller" ];
+		svisscher	[ label="Sjoerd Visscher" ];
+		mwubben		[ label="Mark Wubben" ];
+		mdavidson	[ label="Mike Davidson" ];
+		sjmiles		[ label="Scott Miles" ];
+		jgwebber	[ label="Joel Webber" ];
+		dcrockford	[ label="Douglas Crockford" ];
+		smorais		[ label="Stephan Morais" ];
+		pcorcoran	[ label="Patrick Corcoran" ];
+		rdargahi	[ label="Ross Dargahi" ];
+		amoore		[ label="Adam Moore" ];
+		msweeney	[ label="Matt Sweeney" ];
+		nkoechley	[ label="Nate Koechley" ];
+		jhan		[ label="Jenny Han" ];
+		speterson	[ label="Steven Peterson" ];
+		tkloots		[ label="Todd Kloots" ];
+		bkeese		[ label="Bill Keese" ];
+		jandrews	[ label="Jesse Andrews" ];
+		bskinner	[ label="Brian Skinner" ];
+		ikantor		[ label="Ilia Kantor" ];
+		nroberts	[ label="Neil Roberts" ];
+
+		// companies
+		DotNetSol 	[ label="Dot Net\nSolutions",shape=box ];
+		Google 		[ label="Google",shape=box ];
+		Yahoo 		[ label="Yahoo!",shape=box ];
+		Jot 		[ label="JotSpot",shape=box ];
+		INFA 		[ label="Informatica Corp.",shape=box ];
+		IBM			[ shape=box ];
+		TIBCO		[ shape=box ];
+		GenInt		[ label="General Interface" ];
+		Backbase	[ label="Backbase",shape=box ];
+		Renkoo		[ label="Renkoo",shape=box ];
+		TurboAjax	[ label="TurboAjax Group",shape=box ];
+		Q42			[ label="Q42",shape=box ];
+		NumSum		[ shape=box ];
+		HotWired	[ shape=box ];
+		ActiveSpace	[ shape=box ];
+		Plumtree	[ shape=box ];
+		BEA			[ shape=box ];
+		Microsoft	[ shape=box ];
+		Zimbra		[ shape=box ];
+
+		// projects and products
+		Storage		[ label="AMASS",shape=diamond ];
+		jsxml		[ shape=diamond ];
+		HTMLArea	[ shape=diamond ];
+		AlphaBlox	[ shape=diamond ];
+		HalfBrain	[ shape=diamond ];
+		Oddpost		[ shape=diamond ];
+		Scriptomania [ shape=diamond ];
+		DomAPI		[ shape=diamond ];
+		DynAPI		[ shape=diamond ];
+		GameLib		[ shape=diamond ];
+		Bindows		[ shape=diamond ];
+		jsDOM		[ shape=diamond ];
+		qooxdoo		[ shape=diamond ];
+		XMLJS		[ label="XML for Script",shape=diamond ];
+		Tibet		[ label="TIBET",shape=diamond ];
+		ModPubSub 	[ label="mod_pubsub",shape=diamond ];
+		RePubSub 	[ label="re_pubsub",shape=diamond ];
+		Gmail 		[ label="GMail",shape=diamond ];
+		Gmaps		[ label="Google Maps ",shape=diamond ];
+		BrainJar 	[ label="Brain Jar",shape=diamond ];
+		FM 			[ label="f(m)",shape=diamond ];
+		WebFX 		[ label="WebFX.eae.net",shape=diamond ];
+		jscontrols	[ label="WebFX jscontrols",shape=diamond ];
+		Burst 		[ label="Burstlib",shape=diamond ];
+		Dojo 		[ label="Dojo",shape=diamond ];
+		NW 			[ label="netWindows",shape=diamond ];
+		ISC 		[ label="Isomorphic Inc.",shape=diamond ];
+		WebOS 		[ label="WebOS.com",shape=diamond ];
+		DHTMLCentral [ label="DHTMLCentral.com",shape=diamond ];
+		_13p		[ label="13th Parallel Library\n(unreleased)",shape=diamond ];
+		KevLinDev 		[ label="kevlindev.com",shape=diamond ];
+		ActiveWidgets [ label="ActiveWidgets",shape=diamond ];
+		SWAT		[ shape=diamond ];
+		Prototype	[ shape=diamond ];
+		RoR			[ label="Ruby On Rails",shape=diamond ];
+		Script_aculo_us [ label="Script.aculo.us",shape=diamond ];
+		RICO		[ label="OpenRICO",shape=diamond ];
+		TrimPath	[ shape=diamond ];
+		TrimJunction [ shape=diamond ];
+		TrimQuery	[ shape=diamond ];
+		TrimSpreadsheet [ shape=diamond ];
+		MochiKit	[ shape=diamond ];
+		JPSpan		[ shape=diamond ];
+		Flickr		[ shape=diamond ];
+		XOpus		[ shape=diamond ];
+		sIFR		[ shape=diamond ];
+		JSON		[ shape=diamond ];
+		JSLint		[ shape=diamond ];
+		ZATK		[ label="Zimbra AjaxTK",shape=diamond ];
+		Atlas		[ label="Microsoft Atlas",shape=diamond ];
+		Yui			[ label="Yahoo UI",shape=diamond ];
+	}
+
+// vim:ts=4:noet:ai
