@@ -49,8 +49,10 @@ digraph js_universe
     psowden -> Jot;
     dylan -> INFA;
     dylan -> Dojo;
+    dylan -> Persevere;
+    dylan -> dgrid;
     dylan -> Renkoo;
-    dylan -> Sitepen;
+    dylan -> SitePen;
     ttrenka -> Dojo;
     ttrenka -> FM;
     ttrenka -> _13p;
@@ -197,6 +199,9 @@ digraph js_universe
     kellegous -> Google;
     zakas -> Yahoo;
     zakas -> Yui;
+    kzyp -> Dojo;
+    kzyp -> Persevere;
+    kzyp -> dgrid;
 
     // project and company relationships
     INFA -> NW;
@@ -240,6 +245,9 @@ digraph js_universe
     Yahoo -> Yui;
     IBM -> Dojo;
     ClosureEdit -> Closure;
+    SitePen -> Dojo;
+    SitePen -> dgrid;
+    SitePen -> Persevere;
 
     // developers
     psowden   [ label="Paul Sowden" ];
@@ -325,6 +333,7 @@ digraph js_universe
     baker     [ label="Greg Baker"];
     kellegous [ label="Kelly Norton"];
     zakas     [ label="Nicholas C. Zakas"];
+    kzyp     [ label="Kris Zyp"];
 
     // companies
     DotNetSol   [ label="Dot Net\nSolutions",shape=box ];
@@ -348,7 +357,7 @@ digraph js_universe
     Zimbra    [ shape=box ];
     Lanyrd    [ shape=box];
     BBC       [ shape=box ];
-    Sitepen   [ shape=box];
+    SitePen   [ label="SitePen", shape=box];
     Twitter   [ shape=box];
 
     // projects and products
@@ -411,6 +420,8 @@ digraph js_universe
     Closure  [shape=diamond];
     ClosureEdit [label="Closure Editor",shape=diamond];
     GWT [ label="GWT",shape=diamond ];
+    dgrid    [ label="dgrid",shape=diamond ];
+    Persevere    [ label="Persevere",shape=diamond ];
   }
 
 // vim:ts=2:et:ai
