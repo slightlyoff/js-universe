@@ -195,6 +195,8 @@ digraph js_universe
     jgwebber -> Google;
     kellegous -> GWT;
     kellegous -> Google;
+    zakas -> Yahoo;
+    zakas -> Yui;
 
     // project and company relationships
     INFA -> NW;
@@ -322,6 +324,7 @@ digraph js_universe
     ojan      [ label="Ojan Vafai"];
     baker     [ label="Greg Baker"];
     kellegous [ label="Kelly Norton"];
+    zakas     [ label="Nicholas C. Zakas"];
 
     // companies
     DotNetSol   [ label="Dot Net\nSolutions",shape=box ];
